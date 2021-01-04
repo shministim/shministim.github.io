@@ -21,9 +21,3 @@ var app = new Vue({
     methods: {
     }
 })
-
-function login() {
-    if(data.message == "DontRuinTheScoop"){
-        data.enabled = true;
-    }
-}

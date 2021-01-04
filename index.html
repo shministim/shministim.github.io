@@ -20,11 +20,7 @@
 <body>
     <div id="app">
         <link rel="stylesheet" v-bind:href="bootstrap_link.href" v-bind:integrity="bootstrap_link.integrity" crossorigin="anonymous">
-        <div v-if="password != 'DontRuinTheScoop'">
-            <input v-model="password">
-            <button onclick="login()">Let Me In</button>
-        </div>
-        <div v-if="password == 'DontRuinTheScoop'">
+        <div>
             <div class="container-fluid">
                 <nav class="navbar fixed-top navbar-collapse navbar-expand-lg navbar-light bg-light" id="top">
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">

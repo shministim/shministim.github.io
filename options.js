@@ -1,7 +1,5 @@
 const options = {
     en: {
-        enabled: false,
-        password: "",
         bootstrap_link: {
             href: "https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css",
             integrity: "sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2",
@@ -75,8 +73,6 @@ const options = {
         ]
     },
     he: {
-        enabled: false,
-        password: "",
         bootstrap_link: {
             href: "https://cdn.rtlcss.com/bootstrap/v4.5.3/css/bootstrap.min.css",
             integrity: "sha384-JvExCACAZcHNJEc7156QaHXTnQL3hQBixvj5RV5buE7vgnNEzzskDtx9NQ4p6BJe",
