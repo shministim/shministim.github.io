@@ -18,39 +18,48 @@
     <title>Hello, world!</title>
 </head>
 <body>
+    <!--import facebook sdk-->
+    <!-- <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0" nonce="60n9UD65"></script> -->
+    
     <div id="app">
         <link rel="stylesheet" v-bind:href="bootstrap_link.href" v-bind:integrity="bootstrap_link.integrity" crossorigin="anonymous">
-        <div>
-            <div class="container-fluid">
-                <nav class="navbar fixed-top navbar-collapse navbar-expand-lg navbar-light bg-light" id="top">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarContent">
-                        <ul class="navbar-nav mr-auto">
-                            <li v-for="section in sections" class="nav-item">
-                                <a class="nav-link" v-bind:href="'#' + section.id">
-                                    {{section.heading}} 
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-                <div class="jumbotron full-height align-middle">
-                    <h1 v-for="line in title_lines" class="text-center align-middle" style="font-size:10vw;">
-                        {{line}}
-                    </h1>
-                    <p class="text-center align-middle ">
-                        {{sub_title}} 
-                    </p>
+        <div class="container-fluid">
+            <nav class="navbar fixed-top navbar-collapse navbar-expand-lg navbar-light bg-light" id="top">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li v-if="nav_links" v-for="link in nav_links" class="nav-item">
+                            <a class="nav-link" v-bind:href="link.href">
+                                <img v-bind:src="link.img" alt="" width="32" height="32" title="Bootstrap">
+                            </a>
+                        </li>
+                        <li v-for="section in sections" class="nav-item">
+                            <a class="nav-link" v-bind:href="'#' + section.id">
+                                {{section.heading}} 
+                            </a>
+                        </li>
+                    </ul>
                 </div>
+            </nav>
+            <div class="jumbotron full-height align-middle">
+                <h1 v-for="line in title_lines" class="text-center align-middle" style="font-size:10vw;">
+                    {{line}}
+                </h1>
+                <p class="text-center align-middle ">
+                    {{sub_title}} 
+                </p>
             </div>
-            <div class="container" id="letter">
+        </div>
+        <div class="container">
+            <div id="letter">
                 <p v-for="paragraph of full_letter" class="font-italic">
                     {{paragraph.p}}
                 </p>
             </div>
-            <div class="container" id="solidarity" v-if="solidarity">
+            <div id="solidarity" v-if="solidarity">
                 <h1 class="text-center align-middle">International Solidarity Decleration</h1>
                 <p>
                     {{solidarity}} 
@@ -89,7 +98,23 @@
                     <!--End mc_embed_signup-->
                 </div>
             </div>
-            <div class="container" id="donate" v-if="donate">
+            <!-- <div v-if="sections.has('facebook')" class="fb-page" v-bind:data-href="sections.facebook.heading" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                <blockquote v-bind:cite="sections.facebook.heading" class="fb-xfbml-parse-ignore">
+                    <a v-bind:href="sections.facebook.heading">{{sections.facebook.heading}}</a>
+                </blockquote>
+            </div> -->
+            <!-- <div v-if="sections"> -->
+            <!-- <div v-if="sections.hasOwnProperty('facebook')" id="facebook">
+                <div class="fb-page" data-href="https://www.facebook.com/%D7%9E%D7%9B%D7%AA%D7%91-%D7%94%D7%A9%D7%9E%D7%99%D7%A0%D7%99%D7%A1%D7%98%D7%99%D7%95%D7%AA-2020-107621357661069/" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                    <blockquote cite="https://www.facebook.com/%D7%9E%D7%9B%D7%AA%D7%91-%D7%94%D7%A9%D7%9E%D7%99%D7%A0%D7%99%D7%A1%D7%98%D7%99%D7%95%D7%AA-2020-107621357661069/" class="fb-xfbml-parse-ignore">
+                        <a href="https://www.facebook.com/%D7%9E%D7%9B%D7%AA%D7%91-%D7%94%D7%A9%D7%9E%D7%99%D7%A0%D7%99%D7%A1%D7%98%D7%99%D7%95%D7%AA-2020-107621357661069/">
+                            ‎מכתב השמיניסטיות 2020‎
+                        </a>
+                    </blockquote>
+                </div>
+            </div> -->
+            <!-- </div> -->
+            <div id="donate" v-if="donate">
                 <div class="card" id="donate">
                     <div class="card-header">
                         Donate
@@ -102,7 +127,7 @@
                     </div>
                 </div>
             </div>
-            <div class="container" id="moreLinks">
+            <div id="moreLinks">
                 <div v-for="item in more_links" >
                     <img v-bind:src="item.png" class="img-fluid">
                     <a v-bind:href="item.link">
