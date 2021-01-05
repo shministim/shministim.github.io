@@ -33,7 +33,7 @@
                 <h1 v-for="line in title_lines" class="text-center align-middle" style="font-size:10vw;">
                     {{line}}
                 </h1>
-                <p class="text-center align-middle " dir="rtl">
+                <p class="text-center align-middle " v-bind:dir="dir">
                     {{sub_title}} 
                 </p>
             </div>
