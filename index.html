@@ -3,12 +3,6 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
-    <style type="text/css">
-        #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
-        /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-        We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-    </style>
     
     <title>Shministiyot</title>
 </head>
@@ -16,18 +10,18 @@
     <div id="app">
         <link rel="stylesheet" v-bind:href="bootstrap_link.href" v-bind:integrity="bootstrap_link.integrity" crossorigin="anonymous">
         <div class="container-fluid">
-            <nav class="navbar fixed-top navbar-collapse navbar-expand-sm navbar-light bg-light" id="top">
+            <nav class="navbar fixed-top navbar-collapse navbar-light bg-light" id="top">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarContent">
                     <ul class="navbar-nav mr-auto">
-                        <li v-for="section in sections" class="nav-item">
+                        <li v-for="section in sections" class="nav-item mx-3 my-1">
                             <a class="nav-link" v-bind:href="'#' + section.id">
                                 {{section.heading}} 
                             </a>
                         </li>
-                        <li v-if="nav_links" v-for="link in nav_links" class="nav-item">
+                        <li v-if="nav_links" v-for="link in nav_links" class="nav-item mx-3 my-1">
                             <a class="nav-link" v-bind:href="link.href">
                                 <img v-bind:src="link.img" alt="" width="32" height="32" v-bind:title="link.title">
                             </a>
@@ -35,7 +29,7 @@
                     </ul>
                 </div>
             </nav>
-            <div class="jumbotron full-height align-middle">
+            <div class="jumbotron full-height align-middle mt-5">
                 <h1 v-for="line in title_lines" class="text-center align-middle" style="font-size:10vw;">
                     {{line}}
                 </h1>
@@ -51,54 +45,26 @@
                 </p>
             </div>
             <div id="solidarity" v-if="solidarity">
-                <h1 class="text-center align-middle">International Solidarity Decleration</h1>
-                <p>
-                    {{solidarity}} 
-                </p>
-                <!-- Begin Mailchimp Signup Form -->
-                <div id="mc_embed_signup">
-                    <form action="https://refusersolidarity.us12.list-manage.com/subscribe/post?u=766e8a32ffe12bdef97341bb9&amp;id=fb775d5082&SIGNUP=solidarity_decleration" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                        <div id="mc_embed_signup_scroll">
-                        
-                    <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
-                    <div class="mc-field-group">
-                        <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
-                    </label>
-                        <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-                    </div>
-                    <div class="mc-field-group">
-                        <label for="mce-FNAME">First Name </label>
-                        <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
-                    </div>
-                    <div class="mc-field-group">
-                        <label for="mce-LNAME">Last Name </label>
-                        <input type="text" value="" name="LNAME" class="" id="mce-LNAME">
-                    </div>
-                    <div class="mc-field-group">
-                        <label for="mce-MMERGE3">address </label>
-                        <input type="text" value="" name="MMERGE3" class="" id="mce-MMERGE3">
-                    </div>
-                        <div id="mce-responses" class="clear">
-                            <div class="response" id="mce-error-response" style="display:none"></div>
-                            <div class="response" id="mce-success-response" style="display:none"></div>
-                        </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_766e8a32ffe12bdef97341bb9_fb775d5082" tabindex="-1" value=""></div>
-                        <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-                        </div>
-                    </form>
-                </div>
-                <!--End mc_embed_signup-->
-            </div>
-            <div id="donate" v-if="donate">
-                <div class="card" id="donate">
+                <div class="card my-3" id="donate">
                     <div class="card-header">
-                        Donate
+                        Solidarity
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">Donate to Refuser Solidarity Network</h5>
-                        <p class="card-text">Refuser Solidarity Network provides an international base of support for those who refuse to serve the Israeli occupation. .</p>
-                        <a href="https://app.moonclerk.com/pay/7ja32yaqbtb1" class="btn btn-danger">Donate</a>
-                        <a href="https://www.refuser.org/" class="btn btn-success">Read More</a>
+                        <h5 class="card-title">International Solidarity Decleration</h5>
+                        <p class="card-text">{{solidarity}}</p>
+                        <a href="http://bit.ly/shministiyot-solidarity" class="m-1 btn btn-warning" target="_blank">Sign</a>
+                    </div>
+                </div>
+            </div>
+            <div id="donate" v-if="donate">
+                <div class="card my-3" id="donate">
+                    <div class="card-header">
+                        {{donate.header}}
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">{{donate.title}}</h5>
+                        <p class="card-text">{{donate.descrition}}</p>
+                        <a v-for="action in donate.actions" v-bind:href="action.link" v-bind:class="'m-1 btn btn-' + action.style" target="_blank">{{action.label}}</a>
                     </div>
                 </div>
             </div>
@@ -112,7 +78,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <script src="https://cdn.rtlcss.com/bootstrap/v4.5.3/js/bootstrap.bundle.min.js" integrity="sha384-40ix5a3dj6/qaC7tfz0Yr+p9fqWLzzAXiwxVLt9dw7UjQzGYw6rWRhFAnRapuQyK" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-    <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='MMERGE3';ftypes[3]='text';fnames[4]='SIGNUP';ftypes[4]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
     <script src="options.js"></script>
     <script src="app.js"></script>
 </body>

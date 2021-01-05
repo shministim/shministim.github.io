@@ -4,7 +4,6 @@ const options = {
             href: "https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css",
             integrity: "sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2",
         },
-        donate: true,
         title_lines: [
             "2020",
             "Shministiyot Letter",
@@ -40,6 +39,28 @@ const options = {
             {p: "We are calling for high school seniors (shministiyot) our age to ask themselves: What and who are we serving when we enlist in the military? Why do we enlist? What reality do we create by serving in the military of the occupation? We want peace, and real peace requires justice. Justice requires acknowledgment of the historical and present injustices, and of the continuing Nakba. Justice requires reform in the form of the end of the occupation, the end of the siege on Gaza, and recognition of the right of return for Palestinian refugees. Justice demands solidarity, joint struggle, and refusal. "},
         ],
         solidarity: "In refusing to serve in the Israeli military, the Shministiyot (Israeli high schoolers) who wrote this letter are refusing to normalize Israeli settler colonialism. Above all, this is an act of solidarity with the Palestinian people who live under the Israeli occupation, as well as with Palestinian refugees and their descendants in the exile. This is also an act of deep care for the society they live in. A society which refuses to see its ingrained injustices, which glorifies militarism, which is coopted to its core into the global industrial military complex. Like the Americans who demand to abolish the police, like the Indian farmers who strike against their dispossession by corporations, like the Lebanese who call for a fundamental change in sectarian rule and neoliberal policies, and like many other peoples across the globe, the Shministiyot are seeking to create a new common sense. A common sense in which solidarity is prevalent and injustice is condemned. A common sense which normalizes the fact that systems of oppression are run by people and can be dismantled by people. Join the Shminitiyot in their struggle against Israeli settler colonialism and occupation of Palestine, and show them your support by signing below.",
+        donate: {
+            header: "Donate",
+            title: "Donate to Refuser Solidarity Network",
+            descrition: "Refuser Solidarity Network provides an international base of support for those who refuse to serve the Israeli occupation.",
+            actions: [
+                {
+                    link: "https://app.moonclerk.com/pay/7ja32yaqbtb1",
+                    style: "danger",
+                    label: "Donate",
+                },
+                {
+                    link: "https://www.refuser.org/who-we-are",
+                    style: "success",
+                    label: "Read More",
+                },
+                {
+                    link: "https://mailchi.mp/refuser/subscribe",
+                    style: "info",
+                    label: "Subscribe to our Newsletter",
+                },
+            ]
+        }
     },
     he: {
         bootstrap_link: {
@@ -95,6 +116,18 @@ const options = {
             {p: 'היסטורית, הצבא נתפס ככלי המשרת את מדיניות כור ההיתוך, כמוסד המערער על המעמדות החברתיים והמגדריים בישראל. בפועל, המציאות לא יכולה להיות יותר רחוקה מזה. הצבא מקיים הסללה ברורה; חיילים מהמעמד הבינוני-גבוה מוצבים בתפקידים שיש בהם עתיד כלכלי ואזרחי, בעוד שחיילים מהפריפריה החברתית מוצבים בתפקידים שהסיכון הפיזי והנפשי בהם הוא גבוה יותר ולא יתורגמו לקידום באזרחות. במקביל, משווקת לנו תפיסה של פמיניזם כייצוג נשי בתפקידים כוחניים כמו טייסות, מפקדות טנקים, לוחמות וקצינות מודיעין. איך יתכן שהמאבק נגד אי-שוויון מגדרי יעשה דרך הדיכוי האלים של נשים פלסטיניות? ה״הישגים״ האלה באים על חשבון סולידריות עם מאבקן של הנשים הפלסטיניות. הצבא מנציח את יחסי הכוחות הללו ואת הדיכוי של אוכלוסיות מוחלשות תוך ניצול ציני של מאבקן.'},
             {p: 'אנחנו קוראות לשמיניסטיות בנות גילנו לשאול את עצמן, את מה ומי אנחנו משרתות בגיוס שלנו? למה בעצם אנחנו מתגייסות? איזו מציאות אנחנו מייצרות כשאנחנו משרתות בצבא הכיבוש? אנחנו רוצות שלום, ושלום אמיתי דורש צדק. צדק דורש הכרה בעוולות העבר וההווה, והנכבה המתמשכת. צדק דורש תיקון בצורת סיום הכיבוש, הסרת המצור על עזה והכרה בזכות השיבה של הפליטים הפלסטינים. צדק דורש סולידריות, מאבק משותף וסירוב.'},
             {p: ''},
-        ]
+        ],
+        donate: {
+            header: "תרמי",
+            title: "עזרי לנו לכסות את הוצאות הקמפיין של המכתב",
+            descrition: "מנוסח בלשון נקבה אך מיודע לכל המגדרים",
+            actions: [
+                {
+                    link: "https://pb-idb-prod-web.payboxapp.com/?v=j&g=5ff363544a46160008506ea3#/",
+                    style: "danger",
+                    label: "תרמי",
+                },
+            ]
+        }
     }
 }
