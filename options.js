@@ -76,6 +76,13 @@ const options = {
                     },
                 ]
             },
+            {
+                id: "contact",
+                header: "contact",
+                title: "",
+                descrition: "contact us by this email address: youthletter2020@gmail.com",
+                actions: [],
+            },
         ]
     },
     he: {
@@ -163,6 +170,13 @@ const options = {
                         label: "תרמו",
                     },
                 ],
+            },
+            {
+                id: "contact",
+                header: "צרו קשר",
+                title: "",
+                descrition: "youthletter2020@gmail.com - ליצירת קשר שלחו מייל ל",
+                actions: [],
             },
         ]
     }
