@@ -33,14 +33,14 @@
                 <h1 v-for="line in title_lines" class="text-center align-middle" style="font-size:10vw;">
                     {{line}}
                 </h1>
-                <p class="text-center align-middle ">
+                <p class="text-center align-middle " dir="rtl">
                     {{sub_title}} 
                 </p>
             </div>
         </div>
         <div class="container">
             <div id="letter">
-                <p v-for="paragraph of full_letter" class="font-italic">
+                <p v-for="paragraph of full_letter" class="font-italic " dir="rtl">
                     {{paragraph.p}}
                 </p>
             </div>
