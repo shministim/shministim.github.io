@@ -26,14 +26,9 @@ const options = {
             "donate": {
                 id: "donate",
                 heading: "Donate"
-            },
-            "moreLinks": {
-                id: "moreLinks",
-                heading: "More Links"
-            },
+            }
         },
         full_letter: [
-            // {p: "yo"},
             {p: "We are a group of Israeli 18-year-olds at a crossroads. The Israeli state is demanding our conscription into the military. Allegedly, a defense force which is supposed to safeguard the existence of the State of Israel. In reality, the goal of the Israeli military is not to defend itself from hostile militaries, but to exercise control over a civilian population. In other words, our conscription to the Israeli military has political context and implications. It has implications, first and foremost on the lives of the Palestinian people who have lived under violent occupation for 72 years. Indeed, the Zionist policy of brutal violence towards and expulsion of Palestinians from their homes and lands began in 1948 and has not stopped since. The occupation is also poisoning Israeli society–it is violent, militaristic, oppressive, and chauvinistic. It is our duty to oppose this destructive reality by uniting our struggles and refusing to serve these violent systems–chief among them the military. Our refusal to enlist to the military is not an act of turning our backs on Israeli society. On the contrary, our refusal is an act of taking responsibility over our actions and their repercussions. "},
             {p: "The military is not only serving the occupation, the military is the occupation. Pilots, intelligence units, bureaucratic clerks, combat soldiers, all are executing the occupation. One does it with a keyboard and the other with a machine gun at a checkpoint. Despite all of this, we grew up in the shadow of the symbolic ideal of the heroic soldier. We prepared food baskets for him in the high holidays, we visited the tank he fought in, we pretended we were him in the pre-military programs in high school, and we revered his death on memorial day. The fact that we are all accustomed to this reality does not make it apolitical. Enlistment, no less than refusal, is a political act. "},
             {p: "We are used to hearing that it is legitimate to criticize the occupation only if we took an active part in enforcing it. How does it make sense that in order to protest against systemic violence and racism, we have to first be part of the very system of oppression we are criticizing? "},
@@ -45,32 +40,6 @@ const options = {
             {p: "We are calling for high school seniors (shministiyot) our age to ask themselves: What and who are we serving when we enlist in the military? Why do we enlist? What reality do we create by serving in the military of the occupation? We want peace, and real peace requires justice. Justice requires acknowledgment of the historical and present injustices, and of the continuing Nakba. Justice requires reform in the form of the end of the occupation, the end of the siege on Gaza, and recognition of the right of return for Palestinian refugees. Justice demands solidarity, joint struggle, and refusal. "},
         ],
         solidarity: "In refusing to serve in the Israeli military, the Shministiyot (Israeli high schoolers) who wrote this letter are refusing to normalize Israeli settler colonialism. Above all, this is an act of solidarity with the Palestinian people who live under the Israeli occupation, as well as with Palestinian refugees and their descendants in the exile. This is also an act of deep care for the society they live in. A society which refuses to see its ingrained injustices, which glorifies militarism, which is coopted to its core into the global industrial military complex. Like the Americans who demand to abolish the police, like the Indian farmers who strike against their dispossession by corporations, like the Lebanese who call for a fundamental change in sectarian rule and neoliberal policies, and like many other peoples across the globe, the Shministiyot are seeking to create a new common sense. A common sense in which solidarity is prevalent and injustice is condemned. A common sense which normalizes the fact that systems of oppression are run by people and can be dismantled by people. Join the Shminitiyot in their struggle against Israeli settler colonialism and occupation of Palestine, and show them your support by signing below.",
-        // more_links: [
-        //     {
-        //         title: "First Slide",
-        //         subtitle: "First subtitle",
-        //         link: "https://getbootstrap.com/docs/4.0/components/carousel/",
-        //         png: "placeholder.png",
-        //         alt: "First Slide",
-        //         id: "carousel-item-1",
-        //     },
-        //     {
-        //         title: "Second Slide",
-        //         subtitle: "Second subtitle",
-        //         link: "https://getbootstrap.com/docs/4.0/components/carousel/",
-        //         png: "placeholder.png",
-        //         alt: "Second Slide",
-        //         id: "carousel-item-2",
-        //     },
-        //     {
-        //         title: "Third Slide",
-        //         subtitle: "Third subtitle",
-        //         link: "https://getbootstrap.com/docs/4.0/components/carousel/",
-        //         png: "placeholder.png",
-        //         alt: "Third Slide",
-        //         id: "carousel-item-3",
-        //     },
-        // ]
     },
     he: {
         bootstrap_link: {
@@ -93,22 +62,19 @@ const options = {
                 id: "letter",
                 heading: "המכתב המלא"
             },
-            "moreLinks": {
-                id: "moreLinks",
-                heading: "קישורים נוספים"
+            "donate": {
+                id: "donate",
+                heading: "תרמי"
             },
-            // facebook: {
-            //     id: "facebook",
-            //     heading: "Facebook",
-            //     href: "https://www.facebook.com/%D7%9E%D7%9B%D7%AA%D7%91-%D7%94%D7%A9%D7%9E%D7%99%D7%A0%D7%99%D7%A1%D7%98%D7%99%D7%95%D7%AA-2020-107621357661069/",
-            // }
         },
         nav_links: {
             facebook: {
+                title: "Facebook",
                 href: "https://www.facebook.com/%D7%9E%D7%9B%D7%AA%D7%91-%D7%94%D7%A9%D7%9E%D7%99%D7%A0%D7%99%D7%A1%D7%98%D7%99%D7%95%D7%AA-2020-107621357661069/",
                 img: "facebook.svg",
             },
             instagram: {
+                title: "Instegram",
                 href: "https://instagram.com/youth.letter2021?igshid=v1p1ixa0wkxp",
                 img: "instagram.svg",
             },
@@ -129,33 +95,6 @@ const options = {
             {p: 'היסטורית, הצבא נתפס ככלי המשרת את מדיניות כור ההיתוך, כמוסד המערער על המעמדות החברתיים והמגדריים בישראל. בפועל, המציאות לא יכולה להיות יותר רחוקה מזה. הצבא מקיים הסללה ברורה; חיילים מהמעמד הבינוני-גבוה מוצבים בתפקידים שיש בהם עתיד כלכלי ואזרחי, בעוד שחיילים מהפריפריה החברתית מוצבים בתפקידים שהסיכון הפיזי והנפשי בהם הוא גבוה יותר ולא יתורגמו לקידום באזרחות. במקביל, משווקת לנו תפיסה של פמיניזם כייצוג נשי בתפקידים כוחניים כמו טייסות, מפקדות טנקים, לוחמות וקצינות מודיעין. איך יתכן שהמאבק נגד אי-שוויון מגדרי יעשה דרך הדיכוי האלים של נשים פלסטיניות? ה״הישגים״ האלה באים על חשבון סולידריות עם מאבקן של הנשים הפלסטיניות. הצבא מנציח את יחסי הכוחות הללו ואת הדיכוי של אוכלוסיות מוחלשות תוך ניצול ציני של מאבקן.'},
             {p: 'אנחנו קוראות לשמיניסטיות בנות גילנו לשאול את עצמן, את מה ומי אנחנו משרתות בגיוס שלנו? למה בעצם אנחנו מתגייסות? איזו מציאות אנחנו מייצרות כשאנחנו משרתות בצבא הכיבוש? אנחנו רוצות שלום, ושלום אמיתי דורש צדק. צדק דורש הכרה בעוולות העבר וההווה, והנכבה המתמשכת. צדק דורש תיקון בצורת סיום הכיבוש, הסרת המצור על עזה והכרה בזכות השיבה של הפליטים הפלסטינים. צדק דורש סולידריות, מאבק משותף וסירוב.'},
             {p: ''},
-            
-        ],
-        // more_links: [
-        //     {
-        //         title: "קישור ראשון",
-        //         subtitle: "כותרת משנה ראשונה",
-        //         link: "https://getbootstrap.com/docs/4.0/components/carousel/",
-        //         png: "placeholder.png",
-        //         alt: "First Slide",
-        //         id: "carousel-item-1",
-        //     },
-        //     {
-        //         title: "קישור שני",
-        //         subtitle: "כותרת משנה שנייה",
-        //         link: "https://getbootstrap.com/docs/4.0/components/carousel/",
-        //         png: "placeholder.png",
-        //         alt: "Second Slide",
-        //         id: "carousel-item-2",
-        //     },
-        //     {
-        //         title: "קישור שלישי",
-        //         subtitle: "כותרת משנה שלישית",
-        //         link: "https://getbootstrap.com/docs/4.0/components/carousel/",
-        //         png: "placeholder.png",
-        //         alt: "Third Slide",
-        //         id: "carousel-item-3",
-        //     },
-        // ]
+        ]
     }
 }
