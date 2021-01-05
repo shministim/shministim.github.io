@@ -5,6 +5,7 @@ const options = {
             href: "https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css",
             integrity: "sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2",
         },
+        logo: false,
         title_lines: [
             "2021",
             "Shministiyot Letter",
@@ -13,7 +14,7 @@ const options = {
         sections: [
             {
                 id: "top",
-                heading: "The Top"
+                heading: "Home"
             },
             {
                 id: "letter",
@@ -26,6 +27,10 @@ const options = {
             {
                 id: "donate",
                 heading: "Donate"
+            },
+            {
+                id: "contact",
+                heading: "Contact"
             },
         ],
         nav_links: [],
@@ -92,8 +97,7 @@ const options = {
             href: "https://cdn.rtlcss.com/bootstrap/v4.5.3/css/bootstrap.min.css",
             integrity: "sha384-JvExCACAZcHNJEc7156QaHXTnQL3hQBixvj5RV5buE7vgnNEzzskDtx9NQ4p6BJe",
         },
-        donate: false,
-        solidarity: false,
+        logo: true,
         title_lines: [
             "מכתב השמיניסטיות",
             "2021",
@@ -102,7 +106,7 @@ const options = {
         sections: [
             {
                 id: "top",
-                heading: "ראש הדף"
+                heading: "בית"
             },
             {
                 id: "letter",
@@ -115,6 +119,10 @@ const options = {
             {
                 id: "donate",
                 heading: "תרמו"
+            },
+            {
+                id: "contact",
+                heading: "צרו קשר"
             },
         ],
         nav_links: [

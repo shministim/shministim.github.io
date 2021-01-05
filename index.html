@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" id="top">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -9,33 +9,36 @@
 <body>
     <div id="app">
         <link rel="stylesheet" v-bind:href="bootstrap_link.href" v-bind:integrity="bootstrap_link.integrity" crossorigin="anonymous">
-        <div class="container-fluid">
-            <nav class="navbar fixed-top navbar-collapse navbar-light bg-light" id="top">
+        <div class="container-fluid" id="top">
+            <nav class="navbar fixed-top navbar-collapse navbar-light bg-light">
+                <!-- <img v-if="logo" src="./logo.jpeg" width="40" height="40" alt="" loading="lazy"> -->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarContent">
                     <ul class="navbar-nav mr-auto">
                         <li v-for="section in sections" class="nav-item mx-3 my-1">
-                            <a class="nav-link" v-bind:href="'#' + section.id">
+                            <a class="nav-link" v-bind:href="'#' + section.id" v-on:click="hideNavBar('#' + section.id)">
                                 {{section.heading}} 
                             </a>
                         </li>
                         <li v-if="nav_links" v-for="link in nav_links" class="nav-item mx-3 my-1">
-                            <a class="nav-link" v-bind:href="link.href" target="_blank">
+                            <a class="nav-link" v-bind:href="link.href" target="_blank" v-on:click="hideNavBar">
                                 <img v-bind:src="link.img" alt="" width="32" height="32" v-bind:title="link.title">
                             </a>
                         </li>
                     </ul>
                 </div>
             </nav>
-            <div class="jumbotron full-height align-middle mt-5">
-                <h1 v-for="line in title_lines" class="text-center align-middle" style="font-size:10vw;">
-                    {{line}}
-                </h1>
-                <p class="text-center align-middle " v-bind:dir="dir">
-                    {{sub_title}} 
-                </p>
+            <div >
+                <div class="jumbotron full-height align-middle mt-5">
+                    <h1 v-for="line in title_lines" class="text-center align-middle" style="font-size:10vw;">
+                        {{line}}
+                    </h1>
+                    <p class="text-center align-middle " v-bind:dir="dir">
+                        {{sub_title}} 
+                    </p>
+                </div>
             </div>
         </div>
         <div class="container">
