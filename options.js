@@ -38,29 +38,44 @@ const options = {
             {p: "Historically, the military has been seen as a tool which serves the “melting pot” policy, as an institution which crosscuts social class and gender divides in Israeli society. In reality, this could not be further from the truth. The military is enacting a clear program of ‘channeling’; soldiers from upper-middle class are channelled into positions with economic and civilian prospects, while soldiers from lower socioeconomic backgrounds are channelled into positions which have high mental and physical risk and which do not provide the same head start in civil society. Simultaneously, women’s representation in violent positions such as pilots, tank commanders, combat soldiers, and intelligence officers, is being marketed as feminist achievment. How does it make sense that the struggle against gender inequality is achieved through the oppression of Palestinian women? These “achievements” sidestep solidarity with the struggle of Palestinian women. The military is cementing these power relations and the oppression of marginalized communities through a cynical co-opting of their struggles. "},
             {p: "We are calling for high school seniors (shministiyot) our age to ask themselves: What and who are we serving when we enlist in the military? Why do we enlist? What reality do we create by serving in the military of the occupation? We want peace, and real peace requires justice. Justice requires acknowledgment of the historical and present injustices, and of the continuing Nakba. Justice requires reform in the form of the end of the occupation, the end of the siege on Gaza, and recognition of the right of return for Palestinian refugees. Justice demands solidarity, joint struggle, and refusal. "},
         ],
-        solidarity: "In refusing to serve in the Israeli military, the Shministiyot (Israeli high schoolers) who wrote this letter are refusing to normalize Israeli settler colonialism. Above all, this is an act of solidarity with the Palestinian people who live under the Israeli occupation, as well as with Palestinian refugees and their descendants in the exile. This is also an act of deep care for the society they live in. A society which refuses to see its ingrained injustices, which glorifies militarism, which is coopted to its core into the global industrial military complex. Like the Americans who demand to abolish the police, like the Indian farmers who strike against their dispossession by corporations, like the Lebanese who call for a fundamental change in sectarian rule and neoliberal policies, and like many other peoples across the globe, the Shministiyot are seeking to create a new common sense. A common sense in which solidarity is prevalent and injustice is condemned. A common sense which normalizes the fact that systems of oppression are run by people and can be dismantled by people. Join the Shminitiyot in their struggle against Israeli settler colonialism and occupation of Palestine, and show them your support by signing below.",
-        donate: {
-            header: "Donate",
-            title: "Donate to Refuser Solidarity Network",
-            descrition: "Refuser Solidarity Network provides an international base of support for those who refuse to serve the Israeli occupation.",
-            actions: [
-                {
-                    link: "https://app.moonclerk.com/pay/7ja32yaqbtb1",
-                    style: "danger",
-                    label: "Donate",
-                },
-                {
-                    link: "https://www.refuser.org/who-we-are",
-                    style: "success",
-                    label: "Read More",
-                },
-                {
-                    link: "https://mailchi.mp/refuser/subscribe",
-                    style: "info",
-                    label: "Subscribe to our Newsletter",
-                },
-            ]
-        }
+        cards: [
+            {
+                id: "solidarity",
+                header: "Solidarity",
+                title: "International Solidarity Decleration",
+                descrition: "In refusing to serve in the Israeli military, the Shministiyot (Israeli high schoolers) who wrote this letter are refusing to normalize Israeli settler colonialism. Above all, this is an act of solidarity with the Palestinian people who live under the Israeli occupation, as well as with Palestinian refugees and their descendants in the exile. This is also an act of deep care for the society they live in. A society which refuses to see its ingrained injustices, which glorifies militarism, which is coopted to its core into the global industrial military complex. Like the Americans who demand to abolish the police, like the Indian farmers who strike against their dispossession by corporations, like the Lebanese who call for a fundamental change in sectarian rule and neoliberal policies, and like many other peoples across the globe, the Shministiyot are seeking to create a new common sense. A common sense in which solidarity is prevalent and injustice is condemned. A common sense which normalizes the fact that systems of oppression are run by people and can be dismantled by people. Join the Shminitiyot in their struggle against Israeli settler colonialism and occupation of Palestine, and show them your support by signing below.",
+                actions: [
+                    {
+                        link: "http://bit.ly/shministiyot-solidarity",
+                        style: "warning",
+                        label: "Sign",
+                    },
+                ]
+            },
+            {
+                id: "donate",
+                header: "Donate",
+                title: "Donate to Refuser Solidarity Network",
+                descrition: "Refuser Solidarity Network provides an international base of support for those who refuse to serve the Israeli occupation.",
+                actions: [
+                    {
+                        link: "https://app.moonclerk.com/pay/7ja32yaqbtb1",
+                        style: "danger",
+                        label: "Donate",
+                    },
+                    {
+                        link: "https://www.refuser.org/who-we-are",
+                        style: "success",
+                        label: "Read More",
+                    },
+                    {
+                        link: "https://mailchi.mp/refuser/subscribe",
+                        style: "info",
+                        label: "Subscribe to our Newsletter",
+                    },
+                ]
+            },
+        ]
     },
     he: {
         bootstrap_link: {
@@ -85,7 +100,7 @@ const options = {
             },
             "donate": {
                 id: "donate",
-                heading: "תרמי"
+                heading: "תרמו"
             },
         },
         nav_links: {
@@ -117,17 +132,20 @@ const options = {
             {p: 'אנחנו קוראות לשמיניסטיות בנות גילנו לשאול את עצמן, את מה ומי אנחנו משרתות בגיוס שלנו? למה בעצם אנחנו מתגייסות? איזו מציאות אנחנו מייצרות כשאנחנו משרתות בצבא הכיבוש? אנחנו רוצות שלום, ושלום אמיתי דורש צדק. צדק דורש הכרה בעוולות העבר וההווה, והנכבה המתמשכת. צדק דורש תיקון בצורת סיום הכיבוש, הסרת המצור על עזה והכרה בזכות השיבה של הפליטים הפלסטינים. צדק דורש סולידריות, מאבק משותף וסירוב.'},
             {p: ''},
         ],
-        donate: {
-            header: "תרמי",
-            title: "עזרי לנו לכסות את הוצאות הקמפיין של המכתב",
-            descrition: "מנוסח בלשון נקבה אך מיודע לכל המגדרים",
-            actions: [
-                {
-                    link: "https://pb-idb-prod-web.payboxapp.com/?v=j&g=5ff363544a46160008506ea3#/",
-                    style: "danger",
-                    label: "תרמי",
-                },
-            ]
-        }
+        cards: [
+            {
+                id: "donate",
+                header: "תרמו",
+                title: "",
+                descrition: "עזרו לנו לכסות את הוצאות הקמפיין של המכתב",
+                actions: [
+                    {
+                        link: "https://pb-idb-prod-web.payboxapp.com/?v=j&g=5ff363544a46160008506ea3#/",
+                        style: "danger",
+                        label: "תרמו",
+                    },
+                ]
+            }
+        ]
     }
 }

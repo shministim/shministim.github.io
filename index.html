@@ -22,7 +22,7 @@
                             </a>
                         </li>
                         <li v-if="nav_links" v-for="link in nav_links" class="nav-item mx-3 my-1">
-                            <a class="nav-link" v-bind:href="link.href">
+                            <a class="nav-link" v-bind:href="link.href" target="_blank">
                                 <img v-bind:src="link.img" alt="" width="32" height="32" v-bind:title="link.title">
                             </a>
                         </li>
@@ -44,27 +44,17 @@
                     {{paragraph.p}}
                 </p>
             </div>
-            <div id="solidarity" v-if="solidarity">
-                <div class="card my-3" id="donate">
+            <div id="donate" v-for="card in cards">
+                <div class="card my-3" v-bind:id="card.id">
                     <div class="card-header">
-                        Solidarity
+                        {{card.header}}
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">International Solidarity Decleration</h5>
-                        <p class="card-text">{{solidarity}}</p>
-                        <a href="http://bit.ly/shministiyot-solidarity" class="m-1 btn btn-warning" target="_blank">Sign</a>
-                    </div>
-                </div>
-            </div>
-            <div id="donate" v-if="donate">
-                <div class="card my-3" id="donate">
-                    <div class="card-header">
-                        {{donate.header}}
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">{{donate.title}}</h5>
-                        <p class="card-text">{{donate.descrition}}</p>
-                        <a v-for="action in donate.actions" v-bind:href="action.link" v-bind:class="'m-1 btn btn-' + action.style" target="_blank">{{action.label}}</a>
+                        <h5 class="card-title">{{card.title}}</h5>
+                        <p class="card-text">{{card.descrition}}</p>
+                        <a v-for="action in card.actions" v-bind:href="action.link" v-bind:class="'m-1 btn btn-' + action.style" target="_blank">
+                            {{action.label}}
+                        </a>
                     </div>
                 </div>
             </div>
