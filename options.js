@@ -6,7 +6,7 @@ const options = {
             integrity: "sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2",
         },
         title_lines: [
-            "2020",
+            "2021",
             "Shministiyot Letter",
         ],
         sub_title: "We are calling for high school seniors (shministiyot) our age to ask themselves: What and who are we serving when we enlist in the military? Why do we enlist? What reality do we create by serving in the military of the occupation? We want peace, and real peace requires justice. Justice requires acknowledgment of the historical and present injustices, and of the continuing Nakba. Justice requires reform in the form of the end of the occupation, the end of the siege on Gaza, and recognition of the right of return for Palestinian refugees. Justice demands solidarity, joint struggle, and refusal. ",
@@ -96,7 +96,7 @@ const options = {
         solidarity: false,
         title_lines: [
             "מכתב השמיניסטיות",
-            "2020",
+            "2021",
         ],
         sub_title: "אנחנו קוראות לשמיניסטיות בנות גילנו לשאול את עצמן, את מה ומי אנחנו משרתות בגיוס שלנו? למה בעצם אנחנו מתגייסות? איזו מציאות אנחנו מייצרות כשאנחנו משרתות בצבא הכיבוש? אנחנו רוצות שלום, ושלום אמיתי דורש צדק. צדק דורש הכרה בעוולות העבר וההווה, והנכבה המתמשכת. צדק דורש תיקון בצורת סיום הכיבוש, הסרת המצור על עזה והכרה בזכות השיבה של הפליטים הפלסטינים. צדק דורש סולידריות, מאבק משותף וסירוב.",
         sections: [
