@@ -40,7 +40,7 @@
         </div>
         <div class="container">
             <div id="letter">
-                <p v-for="paragraph of full_letter" class="font-italic " dir="rtl">
+                <p v-for="paragraph of full_letter" class="font-italic " v-bind:dir="dir">
                     {{paragraph.p}}
                 </p>
             </div>
