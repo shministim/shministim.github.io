@@ -9,24 +9,25 @@ const options = {
             "Shministiyot Letter",
         ],
         sub_title: "We are calling for high school seniors (shministiyot) our age to ask themselves: What and who are we serving when we enlist in the military? Why do we enlist? What reality do we create by serving in the military of the occupation? We want peace, and real peace requires justice. Justice requires acknowledgment of the historical and present injustices, and of the continuing Nakba. Justice requires reform in the form of the end of the occupation, the end of the siege on Gaza, and recognition of the right of return for Palestinian refugees. Justice demands solidarity, joint struggle, and refusal. ",
-        sections: {
-            "top": {
+        sections: [
+            {
                 id: "top",
                 heading: "The Top"
             },
-            "letter": {
+            {
                 id: "letter",
                 heading: "The Entire Letter"
             },
-            "solidarity": {
+            {
                 id: "solidarity",
                 heading: "Solidarity Decleration"
             },
-            "donate": {
+            {
                 id: "donate",
                 heading: "Donate"
-            }
-        },
+            },
+        ],
+        nav_links: [],
         full_letter: [
             {p: "We are a group of Israeli 18-year-olds at a crossroads. The Israeli state is demanding our conscription into the military. Allegedly, a defense force which is supposed to safeguard the existence of the State of Israel. In reality, the goal of the Israeli military is not to defend itself from hostile militaries, but to exercise control over a civilian population. In other words, our conscription to the Israeli military has political context and implications. It has implications, first and foremost on the lives of the Palestinian people who have lived under violent occupation for 72 years. Indeed, the Zionist policy of brutal violence towards and expulsion of Palestinians from their homes and lands began in 1948 and has not stopped since. The occupation is also poisoning Israeli society–it is violent, militaristic, oppressive, and chauvinistic. It is our duty to oppose this destructive reality by uniting our struggles and refusing to serve these violent systems–chief among them the military. Our refusal to enlist to the military is not an act of turning our backs on Israeli society. On the contrary, our refusal is an act of taking responsibility over our actions and their repercussions. "},
             {p: "The military is not only serving the occupation, the military is the occupation. Pilots, intelligence units, bureaucratic clerks, combat soldiers, all are executing the occupation. One does it with a keyboard and the other with a machine gun at a checkpoint. Despite all of this, we grew up in the shadow of the symbolic ideal of the heroic soldier. We prepared food baskets for him in the high holidays, we visited the tank he fought in, we pretended we were him in the pre-military programs in high school, and we revered his death on memorial day. The fact that we are all accustomed to this reality does not make it apolitical. Enlistment, no less than refusal, is a political act. "},
@@ -89,32 +90,36 @@ const options = {
             "2020",
         ],
         sub_title: "אנחנו קוראות לשמיניסטיות בנות גילנו לשאול את עצמן, את מה ומי אנחנו משרתות בגיוס שלנו? למה בעצם אנחנו מתגייסות? איזו מציאות אנחנו מייצרות כשאנחנו משרתות בצבא הכיבוש? אנחנו רוצות שלום, ושלום אמיתי דורש צדק. צדק דורש הכרה בעוולות העבר וההווה, והנכבה המתמשכת. צדק דורש תיקון בצורת סיום הכיבוש, הסרת המצור על עזה והכרה בזכות השיבה של הפליטים הפלסטינים. צדק דורש סולידריות, מאבק משותף וסירוב.",
-        sections: {
-            "top": {
+        sections: [
+            {
                 id: "top",
                 heading: "ראש הדף"
             },
-            "letter": {
+            {
                 id: "letter",
                 heading: "המכתב המלא"
             },
-            "donate": {
+            {
+                id: "sign",
+                heading: "חתמו"
+            },
+            {
                 id: "donate",
                 heading: "תרמו"
             },
-        },
-        nav_links: {
-            facebook: {
+        ],
+        nav_links: [
+            {
                 title: "Facebook",
                 href: "https://www.facebook.com/%D7%9E%D7%9B%D7%AA%D7%91-%D7%94%D7%A9%D7%9E%D7%99%D7%A0%D7%99%D7%A1%D7%98%D7%99%D7%95%D7%AA-2020-107621357661069/",
                 img: "facebook.svg",
             },
-            instagram: {
+            {
                 title: "Instegram",
                 href: "https://instagram.com/youth.letter2021?igshid=v1p1ixa0wkxp",
                 img: "instagram.svg",
             },
-        },
+        ],
         full_letter: [
             {p: "לכבוד"},
             {p: "מר בנימין נתניהו, ראש הממשלה"},
@@ -134,6 +139,19 @@ const options = {
         ],
         cards: [
             {
+                id: "sign",
+                header: "חתמו",
+                title: "",
+                descrition: ":בני 16-18 ורוצים לחתום על המכתב? לחצו כאן",
+                actions: [
+                    {
+                        link: "https://docs.google.com/forms/d/e/1FAIpQLSfOrUimhuwcD86fCTbR6Z1HEj4Ii8NgYw7FFYdx3J8cgX6rZw/viewform?usp=pp_url",
+                        style: "success",
+                        label: "חתמו",
+                    },
+                ],
+            },
+            {
                 id: "donate",
                 header: "תרמו",
                 title: "",
@@ -144,8 +162,8 @@ const options = {
                         style: "danger",
                         label: "תרמו",
                     },
-                ]
-            }
+                ],
+            },
         ]
     }
 }
