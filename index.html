@@ -60,12 +60,26 @@
             </div>
         </div>
         <div class="container">
+            <div v-if="signup_first" id="signup_first" class="card my-3">
+                <div class="card-header">
+                    Refuser Updates
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Subscribe to RSN's newsletter to receive monthly refuser updates</p>
+                    <a v-for="action in signup_first.actions" href="action.link" v-bind:class="action.style" target="_blank">
+                        {{action.label}}
+                    </a>
+                </div>
+            </div>
             <div id="letter">
+                <h1 v-if="signup_first">
+                    The Full Letter
+                </h1>
                 <p v-for="paragraph of full_letter" class="font-italic ">
                     {{paragraph.p}}
                 </p>
             </div>
-            <div id="donate" v-for="card in cards">
+            <div v-for="card in cards">
                 <div class="card my-3" v-bind:id="card.id">
                     <div class="card-header">
                         {{card.header}}

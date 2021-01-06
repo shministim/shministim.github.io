@@ -6,6 +6,20 @@ const options = {
             integrity: "sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2",
         },
         logo: false,
+        signup_first: {
+            actions: [
+                {
+                    link: "https://mailchi.mp/refuser/subscribe",
+                    style: "m-1 btn btn-success",
+                    label: "Subscribe",
+                },
+                {
+                    link: "https://www.refuser.org/who-we-are",
+                    style: "m-1 btn btn-info",
+                    label: "Learn More About RSN",
+                },
+            ]
+        },
         title_lines: [
             "2021",
             "Shministiyot Letter",
@@ -15,6 +29,10 @@ const options = {
             {
                 id: "top",
                 heading: "Home"
+            },
+            {
+                id: "signup_first",
+                heading: "Our Newsletter"
             },
             {
                 id: "letter",
@@ -65,7 +83,7 @@ const options = {
             },
             {
                 id: "more",
-                header: "read more",
+                header: "Read More",
                 title: "",
                 descrition: "",
                 actions: [
@@ -79,8 +97,8 @@ const options = {
             {
                 id: "donate",
                 header: "Donate",
-                title: "Donate to Refuser Solidarity Network",
-                descrition: "Refuser Solidarity Network provides an international base of support for those who refuse to serve the Israeli occupation.",
+                title: "Donate to RSN",
+                descrition: "Refuser Solidarity Network - RSN - provides an international base of support for those who refuse to serve the Israeli occupation.",
                 actions: [
                     {
                         link: "https://app.moonclerk.com/pay/7ja32yaqbtb1",
@@ -89,13 +107,8 @@ const options = {
                     },
                     {
                         link: "https://www.refuser.org/who-we-are",
-                        style: "m-1 btn btn-success",
-                        label: "Read More",
-                    },
-                    {
-                        link: "https://mailchi.mp/refuser/subscribe",
                         style: "m-1 btn btn-info",
-                        label: "Subscribe to our Newsletter",
+                        label: "Learn More About RSN",
                     },
                 ]
             },
@@ -115,6 +128,7 @@ const options = {
             integrity: "sha384-JvExCACAZcHNJEc7156QaHXTnQL3hQBixvj5RV5buE7vgnNEzzskDtx9NQ4p6BJe",
         },
         logo: true,
+        signup_first: false,
         title_lines: [
             "מכתב השמיניסטיות",
             "2021",
