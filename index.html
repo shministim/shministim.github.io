@@ -75,7 +75,7 @@
                 </div>
                 <div class="card-body">
                     <p class="card-text">Subscribe to RSN's newsletter to receive monthly refuser updates</p>
-                    <a v-for="action in signup_first.actions" href="action.link" v-bind:class="action.style" target="_blank">
+                    <a v-for="action in signup_first.actions" v-bind:href="action.link" v-bind:class="action.style" target="_blank">
                         {{action.label}}
                     </a>
                 </div>
