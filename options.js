@@ -159,7 +159,7 @@ const options = {
                 id: "sign",
                 header: "חתמו",
                 title: "",
-                descrition: ":בני 16-18 ורוצים לחתום על המכתב? לחצו כאן",
+                descrition: "בני 16-18 ורוצים לחתום על המכתב? לחצו כאן:",
                 actions: [
                     {
                         link: "https://docs.google.com/forms/d/e/1FAIpQLSfOrUimhuwcD86fCTbR6Z1HEj4Ii8NgYw7FFYdx3J8cgX6rZw/viewform?usp=pp_url",
@@ -185,7 +185,7 @@ const options = {
                 id: "contact",
                 header: "צרו קשר",
                 title: "",
-                descrition: "youthletter2020@gmail.com - ליצירת קשר שלחו מייל ל",
+                descrition: "ליצירת קשר שלחו מייל ל - youthletter2020@gmail.com",
                 actions: [],
             },
         ]
