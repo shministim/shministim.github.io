@@ -9,9 +9,12 @@
 <body>
     <div id="app">
         <link rel="stylesheet" v-bind:href="bootstrap_link.href" v-bind:integrity="bootstrap_link.integrity" crossorigin="anonymous">
+        <link rel="stylesheet" href="./style.css">
         <div class="container-fluid" id="top">
             <nav class="navbar fixed-top navbar-collapse navbar-light bg-light">
-                <!-- <img v-if="logo" src="./logo.jpeg" width="40" height="40" alt="" loading="lazy"> -->
+                <a href="#top">
+                    <img v-if="logo" src="./logo.jpeg" width="56" height="56" alt="" loading="lazy" id="logo">
+                </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>

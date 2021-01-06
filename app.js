@@ -22,11 +22,11 @@ var app = new Vue({
         hideNavBar: function(element){
             $('.navbar-collapse').collapse('hide');
             setTimeout(() => {
-                console.log(window.innerHeight);
-                console.log(document.innerHeight);
-                if(window.scrollY != window.innerHeight){
+                // console.log(window.innerHeight);
+                // console.log(document.innerHeight);
+                // if(window.scrollY != window.innerHeight){
                     window.scroll(0, window.scrollY - 56);
-                }
+                // }
             }, 10)
         }
     }
