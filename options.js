@@ -25,6 +25,10 @@ const options = {
                 heading: "Solidarity Decleration"
             },
             {
+                id: "more",
+                heading: "Read More"
+            },
+            {
                 id: "donate",
                 heading: "Donate"
             },
@@ -54,10 +58,23 @@ const options = {
                 actions: [
                     {
                         link: "http://bit.ly/shministiyot-solidarity",
-                        style: "warning",
+                        style: "m-1 btn btn-warning",
                         label: "Sign",
                     },
                 ]
+            },
+            {
+                id: "more",
+                header: "read more",
+                title: "",
+                descrition: "",
+                actions: [
+                    {
+                        link: "https://www.haaretz.com/israel-news/.premium-60-high-school-seniors-refuse-to-serve-in-the-israeli-army-because-of-the-occupation-1.9426393",
+                        style: "m-1 btn btn-outline-info btn-lg btn-block external-link",
+                        label: 'Haaretz: 60 High School Seniors Refuse to Serve in the Israeli Army Because of the Occupation',
+                    },
+                ],
             },
             {
                 id: "donate",
@@ -67,17 +84,17 @@ const options = {
                 actions: [
                     {
                         link: "https://app.moonclerk.com/pay/7ja32yaqbtb1",
-                        style: "danger",
+                        style: "m-1 btn btn-danger",
                         label: "Donate",
                     },
                     {
                         link: "https://www.refuser.org/who-we-are",
-                        style: "success",
+                        style: "m-1 btn btn-success",
                         label: "Read More",
                     },
                     {
                         link: "https://mailchi.mp/refuser/subscribe",
-                        style: "info",
+                        style: "m-1 btn btn-info",
                         label: "Subscribe to our Newsletter",
                     },
                 ]
@@ -115,6 +132,10 @@ const options = {
             {
                 id: "sign",
                 heading: "חתמו"
+            },
+            {
+                id: "more",
+                heading: "קראו עוד"
             },
             {
                 id: "donate",
@@ -163,8 +184,26 @@ const options = {
                 actions: [
                     {
                         link: "https://docs.google.com/forms/d/e/1FAIpQLSfOrUimhuwcD86fCTbR6Z1HEj4Ii8NgYw7FFYdx3J8cgX6rZw/viewform?usp=pp_url",
-                        style: "success",
+                        style: "m-1 btn btn-success",
                         label: "חתמו",
+                    },
+                ],
+            },
+            {
+                id: "more",
+                header: "קראו עוד",
+                title: "",
+                descrition: "",
+                actions: [
+                    {
+                        link: "https://www.mekomit.co.il/%D7%92%D7%99%D7%95%D7%A1-%D7%94%D7%95%D7%90-%D7%A4%D7%95%D7%9C%D7%99%D7%98%D7%99-%D7%9C%D7%90-%D7%A4%D7%97%D7%95%D7%AA-%D7%9E%D7%A1%D7%99%D7%A8%D7%95%D7%91-%D7%94%D7%AA%D7%A4%D7%A8%D7%A1%D7%9D/",
+                        style: "m-1 btn btn-outline-info btn-lg btn-block external-link",
+                        label: 'שיחה מקומית: "גיוס הוא פוליטי לא פחות מסירוב": התפרסם מכתב שמיניסטים חדש',
+                    },
+                    {
+                        link: "https://www.haaretz.co.il/news/politics/.premium-1.9425305",
+                        style: "m-1 btn btn-outline-info btn-lg btn-block external-link",
+                        label: 'הארץ: כ-60 צעירים לפני גיוס הצהירו כי יסרבו לשרת בצבא בגלל הכיבוש',
                     },
                 ],
             },
@@ -176,7 +215,7 @@ const options = {
                 actions: [
                     {
                         link: "https://pb-idb-prod-web.payboxapp.com/?v=j&g=5ff363544a46160008506ea3#/",
-                        style: "danger",
+                        style: "m-1 btn btn-danger",
                         label: "תרמו",
                     },
                 ],

@@ -73,7 +73,7 @@
                     <div class="card-body">
                         <h5 class="card-title">{{card.title}}</h5>
                         <p class="card-text">{{card.descrition}}</p>
-                        <a v-for="action in card.actions" v-bind:href="action.link" v-bind:class="'m-1 btn btn-' + action.style" target="_blank">
+                        <a v-for="action in card.actions" v-bind:href="action.link" v-bind:class="action.style" target="_blank">
                             {{action.label}}
                         </a>
                     </div>
