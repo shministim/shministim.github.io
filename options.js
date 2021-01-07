@@ -88,6 +88,11 @@ const options = {
                 descrition: "",
                 actions: [
                     {
+                        link: "https://www.972mag.com/sixty-teens-israeli-army-objectors/",
+                        style: "m-1 btn btn-outline-info btn-lg btn-block external-link",
+                        label: '+972 Magazine: ‘We’re taking responsibility’: Sixty teens announce refusal to serve in Israeli army',
+                    },
+                    {
                         link: "https://www.haaretz.com/israel-news/.premium-60-high-school-seniors-refuse-to-serve-in-the-israeli-army-because-of-the-occupation-1.9426393",
                         style: "m-1 btn btn-outline-info btn-lg btn-block external-link",
                         label: 'Haaretz: 60 High School Seniors Refuse to Serve in the Israeli Army Because of the Occupation',
