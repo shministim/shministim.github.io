@@ -56,6 +56,10 @@ const options = {
             },
         ],
         nav_links: [],
+        lang_switch: {
+            url: "https://shministim.github.io/?lang=he",
+            label: "עב",
+        },
         full_letter: [
             {p: "We are a group of Israeli 18-year-olds at a crossroads. The Israeli state is demanding our conscription into the military. Allegedly, a defense force which is supposed to safeguard the existence of the State of Israel. In reality, the goal of the Israeli military is not to defend itself from hostile militaries, but to exercise control over a civilian population. In other words, our conscription to the Israeli military has political context and implications. It has implications, first and foremost on the lives of the Palestinian people who have lived under violent occupation for 72 years. Indeed, the Zionist policy of brutal violence towards and expulsion of Palestinians from their homes and lands began in 1948 and has not stopped since. The occupation is also poisoning Israeli society–it is violent, militaristic, oppressive, and chauvinistic. It is our duty to oppose this destructive reality by uniting our struggles and refusing to serve these violent systems–chief among them the military. Our refusal to enlist to the military is not an act of turning our backs on Israeli society. On the contrary, our refusal is an act of taking responsibility over our actions and their repercussions. "},
             {p: "The military is not only serving the occupation, the military is the occupation. Pilots, intelligence units, bureaucratic clerks, combat soldiers, all are executing the occupation. One does it with a keyboard and the other with a machine gun at a checkpoint. Despite all of this, we grew up in the shadow of the symbolic ideal of the heroic soldier. We prepared food baskets for him in the high holidays, we visited the tank he fought in, we pretended we were him in the pre-military programs in high school, and we revered his death on memorial day. The fact that we are all accustomed to this reality does not make it apolitical. Enlistment, no less than refusal, is a political act. "},
@@ -177,6 +181,11 @@ const options = {
                 img: "instagram.svg",
             },
         ],
+        nav_links: [],
+        lang_switch: {
+            url: "https://shministim.github.io/?lang=en",
+            label: "En",
+        },
         full_letter: [
             {p: "לכבוד"},
             {p: "מר בנימין נתניהו, ראש הממשלה"},

@@ -25,9 +25,14 @@
                 <a href="#top">
                     <img v-if="logo" src="./logo.jpeg" width="56" height="56" alt="" loading="lazy" id="logo">
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
+                <div>
+                    <a class="m-1 btn btn-outline-info external-link" v-bind:href="lang_switch.url">
+                        {{lang_switch.label}}
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
                 <div class="collapse navbar-collapse" id="navbarContent">
                     <ul class="navbar-nav mr-auto">
                         <li v-for="section in sections" class="nav-item mx-3 my-1">
