@@ -74,14 +74,14 @@ const options = {
         cards: [
             {
                 id: "solidarity",
-                header: "Solidarity",
-                title: "International Solidarity Decleration",
-                descrition: "I stand together with the Shministiyot (Israeli high schoolers) who are refusing to serve in the Israeli military. As people of consience around the world, we share their commitment to solidarity, deep care for all people, and recognition that systems of oppression were created by people and can be dismantled by people. In refusing to take part in the Israeli government's occupation and by rejecting militarism and settler colonialism, the Shministiyot are demonstrating solidarity with the Palestinian people who live under occupation, as well as with Palestinian refugees and their descendants in the exile. It's our responsibility as a global community to support those who see injustice in their own societies and choose solidarity instead.",
+                header: "Solidarity Decleration",
+                title: "Refuser Solidarity Network, Mesarvot & Objector Film Cooperation",
+                descrition: "",
                 actions: [
                     {
-                        link: "http://bit.ly/shministiyot-solidarity",
+                        link: "https://actionnetwork.org/petitions/8564555a10aa95bd509c0eab97c8895bc13da3ac/?hash=c08cc026030e0689efbaf9fdf39ea37d",
                         style: "m-1 btn btn-warning",
-                        label: "Sign",
+                        label: "Read and Sign",
                     },
                 ]
             },
