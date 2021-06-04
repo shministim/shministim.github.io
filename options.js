@@ -181,7 +181,6 @@ const options = {
                 img: "instagram.svg",
             },
         ],
-        nav_links: [],
         lang_switch: {
             url: "https://shministim.github.io/?lang=en",
             label: "En",
